@@ -162,6 +162,7 @@ function StatsCard({ title, value, icon: Icon, loading }) {
 }
 
 function CourseCard({ course }) {
+  console.log(course);
   return (
     <Card>
       <CardHeader className="pb-2">

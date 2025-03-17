@@ -167,3 +167,50 @@
     @apply bg-background text-foreground;
   }
 }
+/* Add these styles to your global CSS file to customize the MD Editor */
+
+/* Remove borders from the main container */
+.w-md-editor {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Apply border only to the toolbar for separation */
+.w-md-editor-toolbar {
+  border-bottom: 1px solid var(--border) !important;
+  background-color: transparent !important;
+}
+
+/* Adjust the padding in the text area */
+.w-md-editor-text {
+  padding: 8px !important;
+}
+
+/* Remove borders from preview area */
+.editor-preview-no-border {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Make the editor fill available space */
+.w-md-editor-content {
+  height: calc(100% - 40px) !important;
+}
+
+/* Consistent font styling */
+.w-md-editor-text-pre,
+.w-md-editor-text-input,
+.wmde-markdown {
+  font-family: var(--font-sans);
+}
+
+/* Better styling for the markdown preview */
+.wmde-markdown {
+  background-color: transparent !important;
+}
+
+/* Improve focus states */
+.w-md-editor-text-input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
